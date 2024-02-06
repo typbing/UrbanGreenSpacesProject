@@ -1,4 +1,6 @@
-This report presents a spatial analysis of urban green spaces within a selected city. Utilizing PostGIS and QGIS tools, we examine the distribution, size, offering insights into urban public usage patterns.  
+This report presents a spatial analysis of urban green spaces within a selected city. Utilizing PostGIS and QGIS tools, we examine the distribution, size, offering insights into urban public usage patterns.  The importance of urban green spaces in terms of environmental benefits and public health is well documented. In Berlin, urban planning initiatives aim to ensure equitable access to these important resources. The goal of this project is to analyze the distribution of urban green spaces.
+
+
 
 Methodology involved import OSM Data, osm2pgsql -H localhost -P 5433 -d urban_green_spaces -U postgres -W “/Users/binghui/Desktop/2024 SP/IDCE376 DATABASE/UrbanGreenSpacesProject/berlin.osm.pbf”. Querying OpenStreetMap's planet_osm_polygon table via PostGIS to extract data on urban green spaces. Besides, SELECT SUM(area_sq_m) AS total_area FROM green_spaces, thequery calculates the sum of the areas of all the parks, giving the total green space area. 
 
